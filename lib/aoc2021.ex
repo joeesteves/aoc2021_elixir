@@ -5,8 +5,6 @@ defmodule Aoc2021 do
 
   def prepare_input(path) do
     File.read!(path)
-    |> String.split("\n")
-    |> Enum.reject(&( &1 in ["", nil]))
-    |> Enum.map(&String.to_integer/1)
+    |> String.split("\n", trim: true)
   end
 end
