@@ -1,6 +1,5 @@
 defmodule Day2Test do
   use ExUnit.Case
-  doctest Aoc2021
 
   @measures """
 forward 5
